@@ -1,0 +1,51 @@
+export const ordersData = [
+  {
+    name: "Fordable Mini Drone",
+    number: "85631",
+    payment: "Due",
+    status: "Pending",
+    statusClass: "warning",
+  },
+  {
+    name: "LARVENDER KF102 Drone",
+    number: "36378",
+    payment: "Refunded",
+    status: "Declined",
+    statusClass: "danger",
+  },
+  {
+    name: "Ruko F11 Pro Drone",
+    number: "48347",
+    payment: "Due",
+    status: "Pending",
+    statusClass: "warning",
+  },
+  {
+    name: "Drone with Camera Drone",
+    number: "96996",
+    payment: "Paid",
+    status: "Delivered",
+    statusClass: "success",
+  },
+  {
+    name: "GPS 4k Drone",
+    number: "22821",
+    payment: "Paid",
+    status: "Delivered",
+    statusClass: "success",
+  },
+  {
+    name: "DJI Air 2S",
+    number: "81475",
+    payment: "Due",
+    status: "Pending",
+    statusClass: "warning",
+  },
+  {
+    name: "Lozenge Drone",
+    number: "65468",
+    payment: "Paid",
+    status: "Delivered",
+    statusClass: "success",
+  },
+];
