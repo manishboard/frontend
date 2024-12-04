@@ -1,4 +1,4 @@
-# EgaTor Dashboard - Next.js Admin Panel
+# Manishboard - Next.js Admin Panel
 
 ## Project Overview
 
@@ -13,8 +13,8 @@ This is a modern admin dashboard built with Next.js 14, featuring a responsive d
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/egator-dashboard.git
-cd egator-dashboard
+git clone https://github.com/manishboard/frontend.git
+cd frontend
 ```
 
 2. Install dependencies
