@@ -14,7 +14,7 @@ export default function Sidebar() {
         <div className="logo">
           <Image src="/images/logo.png" alt="logo" width={50} height={50} />
           <h2 className="text-muted">
-            EGA<span className="danger">TOR</span>
+            MANISH<span className="danger">BOARD</span>
           </h2>
         </div>
         <div className="close" id="close-btn" onClick={toggleSideMenu}>
