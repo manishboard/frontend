@@ -1,26 +1,27 @@
-export const insightsData = [
-    {
-      class: 'sales',
-      icon: 'analytics',
-      title: 'Total Sales',
-      amount: '$25,024',
-      percentage: '81%',
-      time: 'Last 24 Hours'
-    },
-    {
-      class: 'expenses',
-      icon: 'bar_chart',
-      title: 'Total Expenses',
-      amount: '$14,160',
-      percentage: '62%',
-      time: 'Last 24 Hours'
-    },
-    {
-      class: 'income',
-      icon: 'stacked_line_chart',
-      title: 'Total Income',
-      amount: '$25,024',
-      percentage: '81%',
-      time: 'Last 24 Hours'
-    }
-  ]
+export const salesData = {
+  class: "sales",
+  icon: "analytics",
+  title: "Emails",
+  unread: "2",
+  total: "4",
+  percentage: "81%",
+  time: "Last 24 Hours",
+};
+
+export const expenseData = {
+  class: "expenses",
+  icon: "bar_chart",
+  title: "Total Tasks",
+  amount: "$14,160",
+  percentage: "62%",
+  time: "Last 24 Hours",
+};
+
+export const incomeData = {
+  class: "income",
+  icon: "stacked_line_chart",
+  title: "AWS Cost",
+  amount: "$25,024",
+  percentage: "81%",
+  time: "This Month",
+};

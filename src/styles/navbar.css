@@ -1,0 +1,25 @@
+.navbar{
+    border: 2px solid black;
+    margin-left: 0px;
+    width: 100vw;
+}
+.navbar .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+.navbar .user .logo {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.navbar .user .logo img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.navbar .user .close {
+    display: none;
+}

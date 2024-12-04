@@ -3,7 +3,7 @@ import { ordersData } from "assets/config/orderConfig";
 export default function RecentOrders() {
   return (
     <div className="recent-orders">
-      <h2>Recent Orders</h2>
+      <h2>Tasks</h2>
       <table>
         <thead>
           <tr>

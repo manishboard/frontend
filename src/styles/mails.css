@@ -1,0 +1,50 @@
+/* main {
+    border: 2px solid black;
+} */
+main .mails {
+    margin-top: 2rem;
+}
+
+main .mails h2 {
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+main .mails table {
+    background-color: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .mails table:hover {
+    box-shadow: none;
+}
+
+main .mails table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main .mails table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+main .mails a {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+
+main .mails #open-mail {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: inherit;
+}
+

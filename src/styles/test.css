@@ -1,0 +1,255 @@
+.right {
+    margin-top: 1.4rem;
+}
+
+/* /////////////////////////// */
+.top {
+    margin-top: 1.4rem;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    height: fit-content;
+}
+
+.top button {
+    display: none;
+}
+
+.top .theme-toggler {
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.top .theme-toggler span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top .theme-toggler span.active {
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+.top .profile {
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+
+
+/* ////////////////////////////////////// */
+
+.recent-updates {
+    margin-top: 1rem;
+}
+
+.recent-updates h2 {
+    margin-bottom: 0.8rem;
+}
+
+.recent-updates .updates {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.recent-updates .updates:hover {
+    box-shadow: none;
+}
+
+.recent-updates .updates .update {
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* /////////////////////////// */
+.navbar {
+    background: var(--color-background);
+    z-index: 1000; /* Ensures it stays above other elements */
+    /* box-shadow: var(--box-shadow); Adds a subtle shadow for depth */
+    display: flex; /* Flexbox for child alignment */
+    justify-content: space-between; /* Aligns items within */
+    padding: 2rem 1.5rem; /* Adds spacing inside the navbar */
+    /* margin: 2px 2px; */
+    align-items: center; /* Centers items vertically */
+    border: 2px solid black;
+    height: 3rem;
+    /* object-fit: contain; */
+    box-shadow: none;
+    width: 100vw;
+    height: 2rem;
+}
+
+/* Ensures other content doesn't overlap with the navbar */
+.container {
+    margin-top: 2rem; /* Adjust to the navbar height */
+}
+
+/* ////////////////////////////////////// */
+.logo {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.logo img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.close {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+        margin-left: 0;
+    }
+
+    .logo h2 {
+        display: none;
+    }
+
+    .sidebar h3 {
+        display: none;
+    }
+
+    .sidebar a {
+        width: 5.6rem;
+    }
+
+    .sidebar a:last-child {
+        position: relative;
+        margin-top: 1.8rem;
+    }
+
+    .insights {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .recent-orders {
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 8.8rem;
+    }
+
+    .recent-orders table {
+        width: 83vw;
+    }
+
+}
+
+/* MEDIA QUERIES - 768px*/
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        left: -100%;
+        background: var(--color-white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+        height: 100%;
+        padding-right: var(--card-padding);
+        display: block;
+        animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
+    }
+
+    .logo {
+        margin-left: 1rem;
+    }
+
+    .logo h2 {
+        display: inline;
+    }
+
+    .sidebar h3 {
+        display: inline;
+    }
+
+    .sidebar a {
+        width: 100%;
+        height: 3.4rem;
+    }
+
+    .sidebar a:last-child {
+        position: absolute;
+        bottom: 5rem;
+    }
+
+    .right {
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+    .top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background: var(--color-white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--color-light);
+    }
+
+    .top .theme-toggler {
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+
+    .right .profile .info {
+        display: none;
+    }
+
+    .top button {
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-dark);
+        position: absolute;
+        left: 1rem;
+    }
+
+    .top button span {
+        font-size: 2rem;
+    }
+
+
+}

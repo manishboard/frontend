@@ -123,19 +123,19 @@ b {
 }
 
 .primary {
-    color: var(--color-primary);
+    color: var(--color-primary) !important;
 }
 
 .danger {
-    color: var(--color-danger);
+    color: var(--color-danger) !important;
 }
 
 .success {
-    color: var(--color-success);
+    color: var(--color-success) !important;
 }
 
 .warning {
-    color: var(--color-warning);
+    color: var(--color-warning) !important;
 }
 
 aside {
